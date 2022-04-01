@@ -15,5 +15,10 @@ ys = yt.streams.get_highest_resolution()
 
 #Starting download
 print("Downloading...")
-ys.download()
+
+try:
+   ys.download('')
+except print(0):
+    pass
+
 print("Download completed!!")
